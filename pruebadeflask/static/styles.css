@@ -1,0 +1,159 @@
+/* style.css */
+
+/* General */
+body {
+    font-family: 'Open Sans Condensed', sans-serif;
+    color: #4b3621; /* Tonos marrones vintage */
+    background-color: #faf3e0; /* Fondo beige suave */
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #d4a373; /* Tonalidad cálida vintage */
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+header h1 {
+    font-family: 'Sonsie One', cursive;
+    font-size: 2.5em;
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    background-color: #b5838d;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.2em;
+    padding: 10px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #6d6875;
+    color: #faf3e0;
+    border-radius: 5px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #d4a373;
+    color: #fff;
+    font-size: 0.9em;
+    margin-top: 20px;
+}
+
+/* Main Content */
+main, section {
+    padding: 20px;
+    max-width: 800px;
+    margin: auto;
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+h2, h3 {
+    color: #6d6875;
+    font-family: 'Sonsie One', cursive;
+    margin-top: 0;
+}
+
+a {
+    color: #b5838d;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Formulario */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.Centrico {
+    text-align: center;
+}
+
+form label {
+    margin: 10px 0 5px;
+    font-weight: bold;
+}
+
+form input, form textarea, form button {
+    font-size: 1em;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #b5838d;
+    border-radius: 5px;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+form input:focus, form textarea:focus {
+    border-color: #6d6875;
+}
+
+form button {
+    background-color: #b5838d;
+    color: #fff;
+    cursor: pointer;
+    border: none;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+form button:hover {
+    background-color: #6d6875;
+}
+
+/* Aside */
+aside {
+    background-color: #f2e9e4;
+    padding: 15px;
+    border-left: 4px solid #6d6875;
+    margin-top: 20px;
+}
+
+aside h2 {
+    margin-top: 0;
+}
+
+/* Lista */
+ul {
+    padding-left: 20px;
+    list-style: square;
+}
+
+/* Extras para responsive design */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    main, section {
+        padding: 10px;
+    }
+}
